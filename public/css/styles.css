@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 2%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+body .nav-container {
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-name h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #ff0077;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+.menu-deroulant {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li:hover .menu-deroulant {
+    display: block;
+}
+
+.menu-deroulant li {
+    white-space: nowrap;
+}
+
+.menu-deroulant li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-deroulant li a:hover {
+    background-color: #ff0077;
+    color: white;
+}
+
+.main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.story-section {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.story-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.story-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.story-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.story-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    /* Permet d'adapter la hauteur automatiquement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    /* Animation lors du survol */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Quatre colonnes */
+    gap: 20px;
+    width: 80%;
+    /* Largeur de la grille */
+    margin: 40px auto;
+    /* Ajoute un espace au-dessus et en dessous */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    /* Agrandit le produit au survol */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    /* Coins arrondis en haut */
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    /* Couleur de texte plus douce */
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0077;
+    /* Couleur du prix */
+}
+
+footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    /* Ajoute un espace au-dessus du footer */
+}
+
+footer p {
+    font-size: 14px;
+    color: black;
+}
+
+/* Bouton acceuil*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Hauteur complète de l'écran */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000000; /* Bleu */
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #424a52;
+}

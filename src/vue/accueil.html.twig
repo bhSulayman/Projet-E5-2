@@ -1,0 +1,186 @@
+<h1 style="color:red;">TEST TWIG OK</h1>
+
+
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Accueil
+{% endblock %}
+
+{% block content %}
+
+        <section class="story-section">
+            <div class="story-image">
+                <img src="../images/logo1.png" alt="SneakVerse Story">
+            </div>
+            <div class="story-text">
+                <h2>Bienvenue sur SneakVerse. Voici notre histoire</h2>
+                <br>
+                <p><em>
+                    Bienvenue dans l'univers de SneakVerse, SneakVerse est bien plus qu'une simple plateforme de vente de sneakers, c'est une communauté passionnée par le style, l'innovation et la culture urbaine. Fondée sur l'idée que chaque paire de sneakers raconte une histoire, notre mission est de rassembler les amoureux de baskets autour de modèles variés allant des classiques intemporels aux dernières tendances.
+                    <br>
+                    <br> Nous croyons en la diversité et sélectionnons chaque sneaker avec soin pour son design, son confort et son impact. Que vous soyez fan de grandes marques ou à la recherche de créateurs émergents, notre collection répond à toutes les attentes.
+                    <br>
+                    <br> Chez SneakVerse, nous croyons en la diversité. Chaque sneaker que nous proposons est soigneusement sélectionnée pour son design, son confort et son impact. Que vous soyez un adepte des marques réputées ou que vous cherchiez des
+                    créations de designers émergents, notre collection est conçue pour satisfaire tous les goûts et toutes les envies. Nous sommes fiers de collaborer avec des marques qui partagent notre vision de l'authenticité et de l'innovation.
+                    <br>
+                    <br> Mais SneakVerse va au-delà de la simple vente de chaussures. Nous souhaitons créer un lieu d'échange où la culture sneaker peut s'épanouir. Sur notre site, vous trouverez des articles de blog, des interviews avec des artistes
+                    et des designers, ainsi que des actualités sur les dernières tendances et événements de la communauté. Nous croyons que chaque sneaker a une histoire, et nous voulons vous aider à découvrir celles qui vous inspirent.
+                    <br>
+                    <br> SneakVerse, c'est aussi un espace d'échange avec des articles de blog, des interviews, et des actualités sur la culture sneaker. Nous offrons une expérience utilisateur fluide avec une navigation intuitive, une livraison rapide, et un service client dédié.
+                    <br>
+                    <br> Rejoignez SneakVerse, découvrez votre style et faites partie d'une communauté qui célèbre l'authenticité et la créativité.
+                    <br>
+                    <br> Explorez notre univers, trouvez votre style, et faites partie de l'histoire de SneakVerse.
+                </em></p>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="product promo">
+                <img src="../images/sn1.jpg" alt="Produit 1">
+                <div class="product-info">
+                    <h3>Produit 1</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€99.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="../images/sn2.jpg" alt="Produit 2">
+                <div class="product-info">
+                    <h3>Produit 2</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€89.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="../images/Campus 00s Grey White 1.png" alt="Produit 3">
+                <div class="product-info">
+                    <h3>Produit 3</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€79.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://tse3.mm.bing.net/th?id=OIP._cwFh1oO0b_pT8IgyKA-NwAAAA&pid=Api" alt="Produit 4">
+                <div class="product-info">
+                    <h3>Produit 4</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€109.99</span>
+                </div>
+            </div>
+        </section>
+
+        {# <section class="product-grid">
+            <div class="product promo">
+                <img src="../images/Nike Air Max Plus Baltic Blue 1.png" alt="Produit 1">
+                <div class="product-info">
+                    <h3>Produit 1</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€99.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.KC2LhoPn_KBYBulXwWgYQAHaHa&pid=Api" alt="Produit 2">
+                <div class="product-info">
+                    <h3>Produit 2</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€89.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.zbnTiBtxIIPLCNPRTQ-GYQHaHa&pid=Api" alt="Produit 3">
+                <div class="product-info">
+                    <h3>Produit 3</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€79.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.5X0oJVb2b_ifASV-usfwCQHaHa&pid=Api" alt="Produit 4">
+                <div class="product-info">
+                    <h3>Produit 4</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€109.99</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="product promo">
+                <img src="https://th.bing.com/th/id/OIP.XovIo0TZbY5oUHYNBs9iSgHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain" alt="Produit 1">
+                <div class="product-info">
+                    <h3>Produit 1</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€99.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="../images/New Balance 2002R Protection Pack Navy 1.png" alt="Produit 2">
+                <div class="product-info">
+                    <h3>Produit 2</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€89.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://th.bing.com/th/id/OIP.KyY6ceMLlQs-_G0GKIvFrwHaHa?w=1069&h=1069&rs=1&pid=ImgDetMain" alt="Produit 3">
+                <div class="product-info">
+                    <h3>Produit 3</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€79.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://www.credomen.com/pimages/104-05289-1-750-1000.jpg" alt="Produit 4">
+                <div class="product-info">
+                    <h3>Produit 4</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€109.99</span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="product-grid">
+            <div class="product promo">
+                <img src="../images/sn3.jpg" alt="Produit 1">
+                <div class="product-info">
+                    <h3>Produit 1</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€99.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://i.pinimg.com/736x/8f/68/6c/8f686c982243a7e8093889373d7d8fcc.jpg" alt="Produit 2">
+                <div class="product-info">
+                    <h3>Produit 2</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€89.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="../images/New Balance 1906D Protection Pack Silver Metallic 1.png" alt="Produit 3">
+                <div class="product-info">
+                    <h3>Produit 3</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€79.99</span>
+                </div>
+            </div>
+            <div class="product promo">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.WjMwd5xHlMddKgRVuLQiBgHaHa&pid=Api" alt="Produit 4">
+                <div class="product-info">
+                    <h3>Produit 4</h3>
+                    <p>Description rapide du produit.</p>
+                    <span class="price">€109.99</span>
+                </div>
+            </div>
+        </section> #}
+
+
+        <div class="container">
+        <a href="index.php?page=produit" class="button" >Voir plus ...</a>
+    </div>
+
+{% endblock %}
